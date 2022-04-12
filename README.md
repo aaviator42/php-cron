@@ -1,6 +1,5 @@
 # php-cron
 A hacky implementation of cron jobs in PHP.  
-You probably shouldn't use this.
 
 `v1.0`: `2022-04-12`
 
@@ -25,3 +24,5 @@ You can safely have multiple sets of `php-cron.php` and `php-cron-stop.php`, jus
 ### Why?
 Because my shared hosting provider disabled cron jobs for some stupid reason.
 
+### Disclaimer
+Don't use this unless you're sure you know what you're doing.
