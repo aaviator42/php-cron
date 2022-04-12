@@ -9,7 +9,7 @@ A hacky implementation of cron jobs in PHP.
 3. Make sure `StorX.php` is in the same folder as the two scripts. Get it [here](https://github.com/aaviator42/StorX).
 4. Put your cron job commands in `cronMaster()` in `php-cron.php`.
 5. Configure a time interval in `php-cron.php`.
-6. Run the cron job by making a GET request to `php-cron.php` (the easiest way to do this is to just navigate to it in your web browser).
+6. Run the cron job by making a GET request to `php-cron.php` (the easiest way to do this is by just navigating to it in your web browser).
 7. Stop the cron job by making a GET request to `php-cron-stop.php`.
 
 ### What it does
