@@ -18,7 +18,7 @@ The script will execute `cronMaster()`, and then sleep for `$cronInterval`. Ad i
 
 The cron job script won't allow multiple instances to run at the same time, and the cron job should continue running on the server even if you disconnect from `php-cron.php` (i.e., close the page in your browser).
 
-It creates a DB file `$cronName.cron.db` and a log file `$cronName.cron.log` in the same folder as the scripts. The former is used primarily to terminate cron jobs and ensure only once instance is running at a time.
+It creates a DB file `$cronName.cron.db` and a log file `$cronName.cron.log` in the same folder as the scripts. The former is used primarily to terminate cron jobs and ensure only one instance is running at a time.
 
 You can safely have multiple sets of `php-cron.php` and `php-cron-stop.php`, just rename the two scripts and use a unique name for each cron job.
 
