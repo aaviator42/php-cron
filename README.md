@@ -4,7 +4,7 @@ A hacky implementation of cron jobs in PHP.
 `v1.0`: `2022-04-12`
 
 ### Setup
-1. Put `php-cron.php` and `php-cron-stop.php` in a folder. You can rename both files if you want.
+1. Put `php-cron.php` and `php-cron-stop.php` in a folder on your server. You can rename both files if you want.
 2. Choose a name for your cron job and configure it in both scripts.
 3. Make sure `StorX.php` is in the same folder as the two scripts. Get it [here](https://github.com/aaviator42/StorX).
 4. Put your cron job commands in `cronMaster()` in `php-cron.php`.
@@ -21,8 +21,13 @@ It creates a DB file `$cronName.cron.db` and a log file `$cronName.cron.log` in 
 
 You can safely have multiple sets of `php-cron.php` and `php-cron-stop.php`, just rename the two scripts and use a unique name for each cron job.
 
+Tested on [supported versions](https://www.php.net/supported-versions.php) of PHP (7.4+ as of writing), but will very likely work with older versions as well.
+
 ### Why?
 Because my shared hosting provider disabled cron jobs for some stupid reason.
 
 ### Disclaimer
 Don't use this unless you're sure you know what you're doing.
+
+-------
+Documentation updated: `2022-04-12`.
